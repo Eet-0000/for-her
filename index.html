@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will you be my Valentine?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-hearts">
+    <span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span>
+  </div>
+
+  <canvas id="fireworks-canvas"></canvas>
+
+  <div class="card">
+    <h1>Malsa, will you be my Valentine?</h1>
+    <div class="picture-slot">
+      <div class="carousel">
+        <button type="button" class="carousel-btn carousel-prev" aria-label="Previous photo">‹</button>
+        <div class="carousel-track-wrap">
+          <div class="carousel-track"></div>
+        </div>
+        <button type="button" class="carousel-btn carousel-next" aria-label="Next photo">›</button>
+        <div class="carousel-dots"></div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="btn btn-yes" id="btn-yes">Yes!</button>
+      <span class="btn-no-spacer" aria-hidden="true"></span>
+      <button class="btn btn-no" id="btn-no">No</button>
+    </div>
+  </div>
+
+  <div class="success-overlay" id="success-overlay">
+    <div class="success-box">
+      <h2>Yayyyy! 🎉</h2>
+      <p>You're now my Valentine! 💕</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
